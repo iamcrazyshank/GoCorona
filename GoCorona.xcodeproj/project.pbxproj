@@ -11,7 +11,11 @@
 		868AC7F3245B01E3009428A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC7F2245B01E3009428A2 /* ViewController.swift */; };
 		868AC7F6245B01E3009428A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868AC7F4245B01E3009428A2 /* Main.storyboard */; };
 		868AC7F8245B01E4009428A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868AC7F7245B01E4009428A2 /* Assets.xcassets */; };
-		868AC7FB245B01E4009428A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868AC7F9245B01E4009428A2 /* LaunchScreen.storyboard */; };
+		868AC804245B02F1009428A2 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC802245B02F1009428A2 /* SplashScreenViewController.swift */; };
+		868AC805245B02F1009428A2 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 868AC803245B02F1009428A2 /* SplashScreenViewController.xib */; };
+		868AC808245B0936009428A2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC807245B0936009428A2 /* DashboardViewController.swift */; };
+		868AC80A245B1BBC009428A2 /* GoCoronaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC809245B1BBC009428A2 /* GoCoronaExtensions.swift */; };
+		868AC80C245C47A5009428A2 /* CurveViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC80B245C47A5009428A2 /* CurveViewDesignable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +24,12 @@
 		868AC7F2245B01E3009428A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		868AC7F5245B01E3009428A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		868AC7F7245B01E4009428A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		868AC7FA245B01E4009428A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868AC7FC245B01E4009428A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		868AC802245B02F1009428A2 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		868AC803245B02F1009428A2 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		868AC807245B0936009428A2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		868AC809245B1BBC009428A2 /* GoCoronaExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoCoronaExtensions.swift; sourceTree = "<group>"; };
+		868AC80B245C47A5009428A2 /* CurveViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveViewDesignable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				868AC7F0245B01E3009428A2 /* AppDelegate.swift */,
+				868AC806245B08E7009428A2 /* Splash Screen */,
 				868AC7F2245B01E3009428A2 /* ViewController.swift */,
 				868AC7F4245B01E3009428A2 /* Main.storyboard */,
+				868AC80B245C47A5009428A2 /* CurveViewDesignable.swift */,
+				868AC807245B0936009428A2 /* DashboardViewController.swift */,
+				868AC809245B1BBC009428A2 /* GoCoronaExtensions.swift */,
 				868AC7F7245B01E4009428A2 /* Assets.xcassets */,
-				868AC7F9245B01E4009428A2 /* LaunchScreen.storyboard */,
 				868AC7FC245B01E4009428A2 /* Info.plist */,
 			);
 			path = GoCorona;
+			sourceTree = "<group>";
+		};
+		868AC806245B08E7009428A2 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				868AC802245B02F1009428A2 /* SplashScreenViewController.swift */,
+				868AC803245B02F1009428A2 /* SplashScreenViewController.xib */,
+			);
+			path = "Splash Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868AC7FB245B01E4009428A2 /* LaunchScreen.storyboard in Resources */,
+				868AC805245B02F1009428A2 /* SplashScreenViewController.xib in Resources */,
 				868AC7F8245B01E4009428A2 /* Assets.xcassets in Resources */,
 				868AC7F6245B01E3009428A2 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +157,10 @@
 			files = (
 				868AC7F3245B01E3009428A2 /* ViewController.swift in Sources */,
 				868AC7F1245B01E3009428A2 /* AppDelegate.swift in Sources */,
+				868AC80C245C47A5009428A2 /* CurveViewDesignable.swift in Sources */,
+				868AC80A245B1BBC009428A2 /* GoCoronaExtensions.swift in Sources */,
+				868AC804245B02F1009428A2 /* SplashScreenViewController.swift in Sources */,
+				868AC808245B0936009428A2 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +173,6 @@
 				868AC7F5245B01E3009428A2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		868AC7F9245B01E4009428A2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				868AC7FA245B01E4009428A2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.GoCorona;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.GoCorona;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
