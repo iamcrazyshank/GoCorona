@@ -44,6 +44,15 @@ import QuartzCore
         }
     }
     
+    @IBInspectable var backgroundViewColor: UIColor? {
+        get {
+            return UIColor(cgColor: self.layer.backgroundColor!)
+        }
+        set {
+            self.layer.backgroundColor = newValue?.cgColor
+        }
+    }
+    
     
     @IBInspectable
     var shadowRadius: CGFloat {
